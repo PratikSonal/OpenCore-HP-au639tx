@@ -102,6 +102,14 @@
 				<key>Enabled</key>
 				<true/>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-dGPU-Off-2.aml</string>
+				<key>Path</key>
+				<string>SSDT-dGPU-Off-2.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -161,6 +169,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data></data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -187,6 +199,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data></data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -213,6 +229,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data></data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -239,6 +259,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data></data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -265,6 +289,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data></data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -291,6 +319,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data></data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -317,6 +349,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data></data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -343,6 +379,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data></data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -369,6 +409,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data></data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -395,6 +439,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data></data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -421,6 +469,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data></data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -435,6 +487,8 @@
 			<false/>
 			<key>ResetLogoStatus</key>
 			<true/>
+			<key>SyncTableIds</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>Booter</key>
@@ -935,24 +989,6 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string></string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>USBPorts.kext</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
 				<string>Contents/MacOS/CPUFriend</string>
 				<key>Arch</key>
 				<string>Any</string>
@@ -1084,6 +1120,42 @@
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooRMI.kext/Contents/PlugIns/RMISMBus.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>USBMap.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoltageShift</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>VoltageShift.kext</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -1391,7 +1463,9 @@
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
-			<true/>
+			<false/>
+			<key>ProvideCurrentCpuInfo</key>
+			<false/>
 		</dict>
 		<key>Scheme</key>
 		<dict>
@@ -1401,6 +1475,8 @@
 			<string>x86_64</string>
 			<key>KernelCache</key>
 			<string>Auto</string>
+			<key>CustomKernel</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>Misc</key>
@@ -1426,7 +1502,7 @@
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Modern</string>
+			<string>Acidanthera\GoldenGate</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -1472,6 +1548,8 @@
 				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
 				<key>TextMode</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 			</dict>
 		</array>
 		<key>Security</key>
@@ -1504,6 +1582,8 @@
 			<string>Default</string>
 			<key>Vault</key>
 			<string>Optional</string>
+			<key>AllowToggleSip</key>
+			<false/>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -1524,6 +1604,8 @@
 				<false/>
 				<key>TextMode</key>
 				<false/>
+				<key>Flavour</key>
+				<string>OpenShell:UEFIShell:Shell</string>
 			</dict>
 		</array>
 	</dict>
@@ -1555,6 +1637,8 @@
 				<data>ZW4tVVM6MA==</data>
 				<key>run-efi-updater</key>
 				<string>No</string>
+				<key>ForceDisplayRotationInEFI</key>
+				<integer>0</integer>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1571,6 +1655,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
 				<string>boot-args</string>
+				<string>ForceDisplayRotationInEFI</string>
 			</array>
 		</dict>
 		<key>LegacyEnable</key>
@@ -1616,8 +1701,6 @@
 		<false/>
 		<key>Generic</key>
 		<dict>
-			<key>AdviseWindows</key>
-			<false/>
 			<key>MLB</key>
 			<string>C02745609GUHRPCA8</string>
 			<key>MaxBIOSVersion</key>
@@ -1636,6 +1719,8 @@
 			<string>C02VN0MGHV2N</string>
 			<key>SystemUUID</key>
 			<string>899B01C5-105C-402B-91C5-F20EEE86A6E3</string>
+			<key>AdviseFeatures</key>
+			<false/>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1740,7 +1825,7 @@
 			<key>UgaPassThrough</key>
 			<false/>
 			<key>GopPassThrough</key>
-			<false/>
+			<string>Disabled</string>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
@@ -1749,8 +1834,6 @@
 			<key>AppleBootPolicy</key>
 			<false/>
 			<key>AppleDebugLog</key>
-			<false/>
-			<key>AppleEvent</key>
 			<false/>
 			<key>AppleFramebufferInfo</key>
 			<false/>
@@ -1780,6 +1863,8 @@
 			<false/>
 			<key>UnicodeCollation</key>
 			<false/>
+			<key>AppleEg2Info</key>
+			<false/>
 		</dict>
 		<key>Quirks</key>
 		<dict>
@@ -1798,6 +1883,12 @@
 			<key>UnblockFsConnect</key>
 			<true/>
 			<key>ActivateHpetSupport</key>
+			<false/>
+			<key>EnableVectorAcceleration</key>
+			<true/>
+			<key>ForgeUefiSupport</key>
+			<false/>
+			<key>ReloadOptionRoms</key>
 			<false/>
 		</dict>
 		<key>ReservedMemory</key>
@@ -1827,6 +1918,21 @@
 				<string>RuntimeCode</string>
 			</dict>
 		</array>
+		<key>AppleInput</key>
+		<dict>
+			<key>AppleEvent</key>
+			<string>Builtin</string>
+			<key>CustomDelays</key>
+			<false/>
+			<key>KeyInitialDelay</key>
+			<integer>50</integer>
+			<key>KeySubsequentDelay</key>
+			<integer>5</integer>
+			<key>PointerSpeedDiv</key>
+			<integer>1</integer>
+			<key>PointerSpeedMul</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 </dict>
 </plist>
